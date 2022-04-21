@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 app = Flask(__name__)
-model = pickle.load(open('random_forest_regression_model.pkl', 'rb'))
+model = pickle.load(open('https://drive.google.com/file/d/1XOUDn5vTzyzIXUg7oDW_RcSvNe4PFgNk/view?usp=sharing', 'rb'))
 @app.route('/',methods=['GET'])
 def Home():
     return render_template('index.html')
